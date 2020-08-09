@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="601dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/whistle" />
+
+    <TextView
+        android:id="@+id/text_tools"
+        android:layout_width="382dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="548dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Speak Up! Save A life!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="424dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="21dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mic" />
+
+        <TextView
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/record_audio"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="332dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic" />
+
+            <TextView
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Send Picture"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="237dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="134dp"
+                android:layout_height="82dp"
+                android:src="@drawable/doc" />
+
+            <TextView
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Send Document"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="391dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="-10dp"
+        android:text="All rights resevred | © sikika.co.Ke"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
